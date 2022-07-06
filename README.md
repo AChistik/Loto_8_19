@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Тестовое задание в компанию Finch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Гослото 8 из 19
 
-## Available Scripts
+Требуется реализовать логику игры. Правила следующие: 
 
-In the project directory, you can run:
+У игры есть два поля, в первом поле будет девятнадцать клеток, во втором две клетки.
 
-### `npm start`
+От участника лотереи требуется отметить в первом поле восемь цифр, во втором одну цифру. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+При вычисление результата потребуется сравнить отмеченные участником числа с двумя случайно сгенерированными, в соответствиями с правилами игры (восемь чисел в первом массиве, одно во втором массиве), массивами чисел. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+В случае совпадения четырех и более цифр в первом поле, либо трех и более чисел в первом поле и одного во втором, пользователь считается победителем лотереи и получает причитающиеся ему лавры.
 
-### `npm test`
+## Задание со звездочкой 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Сделал
+4*) Адаптивная mobile-first вёрстка, условно приближенная к макету. Flexbox/Grid layout. (https://www.figma.com/file/VDraSBJhGzDKP33eS4IBbp6Z/Finch_test). Safari хорошо, но оба не обязательно.
 
-### `npm run build`
+5*) Реализовать генерацию случайно выбранных полей в билете (в соответствие с правилами лотереи) по нажатию на значок волшебной палочки.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Не Сделал
+6*) Реализовать логику отправки выбранных чисел на сервер по любому url'у. Отправка должна происходить после нажатия на кнопку "Показать результат". В данных отправки должен быть объект
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Косяки
 
-### `npm run eject`
+#### Надеюсь то что я их вижу сыграет мне в плюс
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Многое не сделал потому что поздно начал, а срок который я обозначил уже подошел к концу
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-- Слабо декомпозировал разные штуки (компоненты и функции) например в рендере случайных чисел и в рендере ответа одинаковый код но я его не кинул в отдельный файл
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-- Стили хотел разнести по разным файлам, чтобы лежали у своих компонентов, но решил сэкономить время
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-- Первоначально не увидел ссылку на макет в файле по этому немного скопировал Рапидо, + из за этого фигово сделал страницу с результатами (первоначально увидел хотел выводить победу/поражение алертом или формой, но потом конгда увидел что в макете 2 страници в попыхах сделал страницу с ответом)
 
-## Learn More
+-- с 6 звездочкой сделал Post запрос, но потом удалил. Не хватило времени разобраться как в Link передать и выиграшные числа и отправить одновременно запрос
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Для запуска
 
-### Code Splitting
+- git clone https://github.com/AChistik/Finch_test.git
+- git cd Finch_test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- npm i
+- npm run start
+- Открыть [http://localhost:3000]http://localhost:3000  
