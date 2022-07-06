@@ -1,0 +1,57 @@
+.ticketSend {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    z-index: 400;
+    width: 100%;
+    max-width: 768px;
+    transform: translateX(-50%);
+    padding: 16px 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px;
+}
+
+.ticket-send__btn {
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 150ms linear 0s, border-color 150ms linear 0s, background-color 150ms linear 0s, color 150ms linear 0s, opacity 150ms linear 0s;
+    width: 100%;
+    appearance: none;
+    background-color: rgb(33, 33, 33);
+    border: 2px solid transparent;
+    color: rgb(255, 255, 255);
+    padding: 0px 24px;
+    gap: 10px;
+}
+
+.ticket-send__title {
+    font-family: Roboto, sans-serif;
+    display: block;
+    text-align: inherit;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    transition: color 150ms linear 0s;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.ticket-send__price {
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(255, 205, 23);
+    display: flex;
+    font-weight: 400;
+    transition: color 150ms linear 0s;
+}
