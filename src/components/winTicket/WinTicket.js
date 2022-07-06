@@ -2,6 +2,8 @@
 import stores from "../../store/stores";
 import { useNavigate, Link } from 'react-router-dom'
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import * as actions from '../../store/actions';
 
 const isWin = () => {
 
@@ -51,6 +53,7 @@ const RenderItems = ({ arr }) => {
 
 
 function WinTicket() {
+    const dispatch = useDispatch();
     const navigate = useNavigate()
     console.log(stores.getState()[0])
     useEffect(() => {
@@ -72,7 +75,7 @@ function WinTicket() {
             <h2>Выигрышные числа</h2>
             <RenderItems arr={winArr} />
 
-            <Link to='/' style=
+            <Link to='/' onClick={() => dispatch(actions.removeNumberList())} style=
                 {{
                     boxSizing: 'border-box',
                     padding: '10px',
