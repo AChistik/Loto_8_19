@@ -46,3 +46,6 @@
 - npm i
 - npm run start
 - Открыть [http://localhost:3000]http://localhost:3000  
+
+
+# P.S. Надеюсь попаду на собеседование)
