@@ -15,7 +15,7 @@
 
 ## Для запуска
 
-- git clone https://github.com/AChistik/Finch_test.git
+- git clone https://github.com/AChistik/Loto_8_19.git
 - cd Finch_test
 
 - npm i
